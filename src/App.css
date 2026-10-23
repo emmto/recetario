@@ -1,0 +1,347 @@
+/* Contenedor general */
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* =========================================
+   PANTALLA 1: LISTA PRINCIPAL DE RECETAS
+   ========================================= */
+
+.header-principal {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.badge-superior {
+  display: inline-block;
+  background-color: #ffe6cf;
+  color: #a34800;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.header-principal h1 {
+  font-size: 2.2rem;
+  color: #1f1f1f;
+  margin-bottom: 8px;
+}
+
+.subtitulo-principal {
+  color: #666;
+  font-size: 1.05rem;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.grid-recetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.tarjeta-receta {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  border: 1px solid #e8e3dc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.tarjeta-receta:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contenedor-foto {
+  width: 100%;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.foto-receta {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.icono-receta {
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+
+.categoria-tag {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: #f1ede6;
+  color: #6d6255;
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.tarjeta-receta h2 {
+  font-size: 1.45rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.descripcion-corta {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.meta-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 0.88rem;
+  color: #777;
+  padding: 12px 0;
+  border-top: 1px solid #f0eae1;
+  border-bottom: 1px solid #f0eae1;
+  margin-bottom: 20px;
+}
+
+.btn-ver-receta {
+  background-color: #c95116;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.btn-ver-receta:hover {
+  background-color: #a8400e;
+}
+
+/* =========================================
+   PANTALLA 2: DETALLE DE LA RECETA
+   ========================================= */
+
+.pantalla-detalle {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e8e3dc;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.nav-detalle {
+  margin-bottom: 20px;
+}
+
+.btn-volver,
+.btn-volver-abajo {
+  background-color: #f3efe8;
+  color: #4b443c;
+  border: 1px solid #ddd6cb;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-volver:hover,
+.btn-volver-abajo:hover {
+  background-color: #e5ded4;
+}
+
+.header-detalle {
+  text-align: center;
+  border-bottom: 1px solid #eee7dd;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+.contenedor-foto-detalle {
+  max-width: 600px;
+  margin: 0 auto 16px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.foto-detalle {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icono-grande {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.header-detalle h1 {
+  font-size: 2rem;
+  color: #222;
+  margin: 10px 0 6px;
+}
+
+.subtitulo-detalle {
+  font-size: 1.05rem;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.meta-info-detalle {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.meta-card {
+  background: #faf7f2;
+  border: 1px solid #ede7dc;
+  padding: 10px 18px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meta-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #8c8275;
+  font-weight: 700;
+}
+
+.meta-valor {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.descripcion-detalle {
+  color: #444;
+  font-size: 1.05rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Columnas de Ingredientes y Pasos */
+.columnas-detalle {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 35px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .columnas-detalle {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bloque-ingredientes h2,
+.bloque-instrucciones h2 {
+  font-size: 1.3rem;
+  color: #2b2b2b;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #f1ece4;
+  padding-bottom: 8px;
+}
+
+.lista-ingredientes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lista-ingredientes li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  background: #faf8f5;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  border-left: 3px solid #d49547;
+}
+
+.bullet-check {
+  color: #c95116;
+  font-weight: bold;
+}
+
+.lista-pasos {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.paso-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.numero-paso {
+  background-color: #c95116;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.texto-paso {
+  color: #3b3b3b;
+  font-size: 0.96rem;
+  line-height: 1.5;
+}
+
+.caja-consejo {
+  background-color: #fff9e6;
+  border: 1px solid #fae29f;
+  color: #7a5e0b;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.footer-detalle {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid #eee7dd;
+}
